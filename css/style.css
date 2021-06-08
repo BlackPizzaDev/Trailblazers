@@ -62,6 +62,12 @@ body {
   transform: rotate(90deg);
 }
 
+.PointerAnchor {
+  opacity: 1;
+  border: solid 2px #FFFFFF;
+  transform: rotate(90deg);
+}
+
 #AnchorLink {
   position: absolute;
   top: 0;
@@ -82,7 +88,7 @@ body {
 
 .Content {
   padding: 50px;
-  max-width: 1600px;
+  max-width: 1600px !important;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
@@ -118,7 +124,7 @@ body {
 }
 
 .Hide {
-  display: none;
+  display: none !important;
 }
 
 
@@ -140,9 +146,10 @@ body {
   padding-top: 50px;
   }
 
-.Section-Articles-Trends {
+.Section-Articles-Trends, .Section-Offers {
   padding: 50px 0px;
 }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -154,7 +161,7 @@ body {
   padding-top: 40px;
   }
 
-  .Section-Articles-Trends {
+  .Section-Articles-Trends, .Section-Offers {
     padding: 40px 0px;
   }
 }
@@ -198,14 +205,25 @@ body {
 .Nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
   z-index: 9999;
+  width: 100%;
+/*  position: absolute;
+  right: 0;
+  background: #111213;
+  width: fit-content;
+  padding: 10px 5px;
+  border-radius: 50px;
+  backdrop-filter: saturate(180%) blur(20px);*/
 }
 
-.Nav-Fixed {
-  z-index: 10000;
-}
+/*.Nav-Fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+}*/
 
 @media screen and (max-width: 635px) {
   .Nav-Link-Contact {
@@ -449,7 +467,7 @@ body {
 
 /*Hover Link Nav Content*/
 .Link-Cabinet-Content:nth-child(1) > a:after {
-  content: 'Nous accompagnons  les entreprises dans l’intégration du digital dans leur stratégie et leur culture d’entreprise  en travaillant avec  leurs équipes.';
+  content: 'Nous accompagnons les entreprises dans l’intégration du digital dans leur stratégie et leur culture d’entreprise  en travaillant avec  leurs équipes.';
 }
 
 .Link-Cabinet-Content:nth-child(2) > a:after {
@@ -600,9 +618,28 @@ body {
 .Keywords-Title {
   z-index: -1;
   cursor: pointer;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.Keywords-Title > a {
+  text-decoration: none;
+  color: #111213;
+  transition: color ease 0.8s;
+}
+
+.Keywords-Title > a:hover {
+  color: #6750F7;
+  transition: color ease 0.8s;
 }
 
 .Keywords-Title:hover ~ .Keywords-Description {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity ease-in 0.2s;
+}
+
+.Keywords-Title:hover ~ .Keywords-Description::before {
   visibility: visible;
   opacity: 1;
   transition: opacity ease-in 0.2s;
@@ -624,10 +661,6 @@ body {
     line-height: 5vw;
     width: 88vw;
   }
-}
-
-.Keywords-Title:hover {
-  color: #6750F7;
 }
 /*Section Keywords*/
 
@@ -930,14 +963,22 @@ body {
 }
 
 
-.Box-Footer-Links > div > a:first-child {
+.Box-Footer-Links > div > a {
   margin-right: 30px;
 }
 
+.Box-Footer-Links > div > a:last-child {
+  margin-right: 0px;
+}
+
 @media screen and (max-width: 640px) {
-    .Box-Footer-Links > div > a:first-child {
+    .Box-Footer-Links > div > a {
         margin-right: 0px;
         margin-bottom: 15px;
+    }
+    .Box-Footer-Links > div > a:last-child {
+        margin-right: 0px;
+        margin-bottom: 30px;
     }
 }
 
@@ -1349,6 +1390,13 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .Section-Formulaire {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .Section-Formulaire {
     margin-top: 20px;
@@ -1389,7 +1437,14 @@ body {
 
 @media screen and (max-width: 800px) {
   .Button-Box {
-    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Button-Box {
+    margin-top: 0px;
     flex-direction: column;
   }
 
@@ -1408,4 +1463,239 @@ body {
 
 .Section-Footer-Contact {
 	margin-top: 0px !important;
+}
+
+.Validation-Box {
+  z-index: 10000;
+  position: fixed;
+  max-height: 100vh;
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(19, 20, 20, 1);
+  display: none;
+}
+
+.Offers-Form-Box {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(19, 20, 20, 1);
+  display: none;
+  overflow: scroll;
+}
+
+.Validation-Content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+  .Validation-Content {
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: none;
+    transform: translateY(-50%);
+    margin-top: 50vh;
+    width: 100%;
+  }
+}
+
+.Validation-Box-Close, .Offers-Box-Close {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .Validation-Box-Close, .Offers-Box-Close {
+    right: 25px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Validation-Box-Close, .Offers-Box-Close {
+    right: 15px;
+    top: 30px;
+  }
+}
+
+.Validation-Content > h2 {
+  color: #FFF !important;
+}
+
+.Validation-Content > h5 {
+  color: #FFF !important;
+}
+
+.Validation-Content > .Link-Main {
+  color: #FFF !important;
+  border-bottom: solid 1px #FFF !important;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+/*Section Offers*/
+
+.Offers-Content {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 1250px;
+}
+
+@media screen and (max-width: 500px) {
+  .Offers-Content {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1345px) {
+  .Offers-Content {
+    width: 100%;
+  }
+}
+
+.Offers-Content > h2 {
+  margin-bottom: 30px;
+}
+
+.Offers-Content > h5 {
+  margin-bottom: 40px;
+}
+
+.DropDown-Recrutement-Box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+
+@media screen and (max-width: 1345px) {
+  .DropDown-Recrutement-Box {
+    flex-direction: column;
+  }
+}
+
+
+.Sections-Offers-Listing {
+  display: flex;
+}
+
+.Postulator-Box {
+  margin-top: 15px;
+}
+
+.RightWrapper {
+  max-width: 825px;
+}
+
+@media screen and (max-width: 1345px) {
+  .RightWrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .Postulator-Box {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Section-Offers {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Section-Offers {
+    margin-top: 0px;
+  }
+}
+
+.Section-Offers > #DropDown {
+  margin-bottom: 60px;
+}
+
+.Section-Offers > #DropDown:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .Section-Offers > #DropDown {
+  margin-bottom: 30px;
+}
+}
+
+.Drop-File-Box {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .Drop-File-Box {
+    margin-top: 50px;
+  }
+}
+
+.Drop-Box-Content {
+  margin-left: 30px;
+}
+
+.Drop-Box-Content > p {
+  font-size: 16px;
+  color: grey;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.CV-box > p {
+  font-size: 16px;
+  line-height: 20px;
+  color: grey;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.Drop-Box {
+  width: 70px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  background: #6750F7;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: opacity ease 0.8s;
+  cursor: pointer;
+  font-family: "Aktifo";
+}
+
+.Drop-Box:hover {
+  opacity: 0.2;
+}
+
+.CV-box {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .CV-box {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 }

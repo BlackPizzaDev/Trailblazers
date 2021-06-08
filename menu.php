@@ -1,4 +1,4 @@
-<section class="Content-Full-Menu">
+	<section class="Content-Full-Menu">
 	<div class="Content Menu-Section">
 		<div class="Menu-Nav">
 			<ul class="Menu-Nav-List">
@@ -11,11 +11,19 @@
 		</div>
 		<div class="Menu-Flex-Box">
 			<div class="Menu-Nav-Links">
-				<h2 class="Link-Menu-Circle Link-Cabinet-Content"><a class="Color-white" href="cabinet.php">
-				Cabinet</a></h2>
-				<h2 class="Link-Cabinet-Content"><a class="Color-white" href="services.php">Services</a></h2>
-				<h2 class="Link-Cabinet-Content"><a class="Color-white" href="actus.php">Actualités</a></h2>
-				<h2 class="Link-Cabinet-Content"><a class="Color-white" href="contact.php">Contact</a></h2>
+				<h2 class="Link-Cabinet-Content">
+					<a class="Color-white" href="cabinet.php">
+				Cabinet</a>
+			</h2>
+				<h2 class="Link-Cabinet-Content">
+					<a class="Color-white" href="services.php">Services</a>
+				</h2>
+				<h2 class="Link-Cabinet-Content">
+					<a class="Color-white" href="actus.php">Actualités</a>
+				</h2>
+				<h2 class="Link-Cabinet-Content">
+					<a class="Color-white" href="contact.php">Contact</a>
+				</h2>
 			</div>
 			<div class="Menu-Contact-Infos">
 				<a class="Nav-Link" href="mailto:contact@trailblazers.consulting">contact@trailblazers.consulting</a>

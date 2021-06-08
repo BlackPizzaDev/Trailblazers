@@ -461,7 +461,7 @@ figcaption {
 .Add-XL, .Less-XL, .Add-L, .Less-L {
 	color: #6750F7;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 25px;
 	padding-left: 10px;
 	cursor: pointer;
 }
@@ -700,8 +700,11 @@ article:hover > .Article-Img-H5-Box > img  {
 	transition: height ease-out 0.2s;
 	cursor: pointer;
 	margin-bottom: 30px;
-	cursor: pointer;
 	height: auto;
+}
+
+.DropDown-White {
+	border-bottom: solid 2px #FFFFFF;
 }
 
 @media screen and (max-width: 510px) {

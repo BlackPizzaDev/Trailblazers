@@ -106,6 +106,19 @@ grabCursor: true,
 </script>
 <!-- Cursor Pointer Anchor-->
 
+<!-- Cursor Pointer Site-->
+<script>
+    $(document).ready(function() {
+        $('.AllSite').hover(function(){
+            $('.Pointer').addClass('PointerNone');
+        },
+        function(){
+            $('.Pointer').removeClass('PointerNone');
+        });
+    });
+</script>
+<!-- Cursor Pointer Site-->
+
 <!-- Cursor Pointer Article-->
 <script>
   $(document).ready(function() {
@@ -118,3 +131,65 @@ grabCursor: true,
   });
 </script>
 <!-- Cursor Pointer Article-->
+
+<!-- Cursor Pointer KeyWord-->
+<script>
+  $(document).ready(function() {
+      $('article, .Article-XL').hover(function(){
+          $('.Pointer').addClass('PointerKeyword');
+      },
+      function(){
+          $('.Pointer').removeClass('PointerKeyword');
+      });
+  });
+</script>
+<!-- Cursor Pointer KeyWord-->
+
+<!-- Pop Up Validation Contact -->
+<script>
+$(document).ready(function(){
+  $(".Button").click(function(){
+    $(".Validation-Box").fadeIn(350);
+  });
+  $(".Close").click(function(){
+    $(".Validation-Box").fadeOut(350);
+  });
+});
+
+$(document).ready(function() {
+      $('.CTA-Offers').click(function(){
+          $('.AllSite').addClass('Hide');
+      },
+      function(){
+          $('.AllSite').removeClass('Hide');
+      });
+  });
+</script>
+<!-- Pop Up Validation Contact -->
+
+<!-- Pop Up Formulaire Recrutement -->
+<script>
+$(document).ready(function(){
+  $(".CTA-Offers").click(function(){
+    $(".Offers-Form-Box").fadeIn(350);
+  });
+  $(".Offers-Box-Close").click(function(){
+    $(".Offers-Form-Box").fadeOut(350);
+  });
+});
+</script>
+<!-- Pop Up Formulaire Recrutement -->
+
+<!-- Pop Up Validaion Recrutement -->
+<script>
+$(document).ready(function(){
+  $(".CTA-Offers-Form").click(function(){
+    $('.Offers-Form-Box').addClass('Hide');
+  });
+  $(".Close").click(function(){
+    $(".Validation-Box").fadeOut(350);
+  });
+});
+</script>
+<!-- Pop Up Validation Recrutement -->
+

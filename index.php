@@ -25,7 +25,6 @@
 		<!-- HEADER -->
 
 		<div id="Anchor" class="AllSite">
-
 			<!-- CABINET -->
 			<section class="Section-Presentation Content-Small">
 				<div class="Columns-2X">
@@ -46,19 +45,19 @@
 					<h6 class="">Approche</h6>
 					<div class="Box-Keywords">
 						<div class="Keywords">
-							<h1 class="Keywords-Title">Créatif</h1>
+							<h1 class="Keywords-Title"><a href="cabinet.php">Créatif</a></h1>
 							<h5 class="Keywords-Description">Parce que nous pensons que la créativité est la clé pour se démarquer et proposer de l'innovation dans un service.</h5>
 						</div>
 						<div class="Keywords">
-							<h1 class="Keywords-Title">Disruptif</h1>
+							<h1 class="Keywords-Title"><a href="cabinet.php">Disruptif</a></h1>
 							<h5 class="Keywords-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nuncas.</h5>
 						</div>
 						<div class="Keywords">
-							<h1 class="Keywords-Title">Effiface</h1>
+							<h1 class="Keywords-Title"><a href="cabinet.php">Effiface</a></h1>
 							<h5 class="Keywords-Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nulla nuncas.</h5>
 						</div>
 						<div class="Keywords">
-							<h1 class="Keywords-Title">Ambitieux</h1>
+							<h1 class="Keywords-Title"><a href="cabinet.php">Ambitieux</a></h1>
 							<h5 class="Keywords-Description">Lorem ipsum doloras suspendisse nulla.</h5>
 						</div>
 					</div>
