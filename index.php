@@ -7,11 +7,12 @@
 		</div>
 		<!-- HEADER -->
 		<div class="Content-Full Anchor">
+			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img class="Logo" src="img/logo.svg">
+			</div>
 			<header class="Content Header">
 				<a href="#Anchor" id="AnchorLink"></a>
-				<div class="Nav-Fixed">
 					<?php require 'nav.php'; ?>
-				</div>
 				<div class="H2-Box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 					<h2 class="Color-white">Cabinet de conseil en stratégie digitale.</h2>
 				</div>
@@ -115,9 +116,9 @@
 			</section>
 			<!-- SOCIALS POSTS -->
 			<!-- FOOTER -->
-			<?php require 'footer-html.php'; ?>
+			<?php require 'footer.php'; ?>
 			<!-- FOOTER -->
 		</div>
 	</main>
-	<?php require 'footer.php'; ?>
+	<?php require 'script.php'; ?>
 </body>

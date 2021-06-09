@@ -7,10 +7,11 @@
 		</div>
 		<!-- HEADER -->
 		<div class="Content-Full NoPointer">
+			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img class="Logo" src="img/logo.svg">
+			</div>
 			<header class="Content">
-				<div class="Nav-Fixed">
-					<?php require 'nav.php'; ?>
-				</div>
+				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
 					<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 						<img src="img/shapes/header-triangle-blue.svg">
@@ -125,9 +126,9 @@
 						</section>
 						<!-- CABINET CONTACT -->
 						<!-- FOOTER -->
-						<?php require 'footer-html.php'; ?>
+						<?php require 'footer.php'; ?>
 						<!-- FOOTER -->
 					</div>
 				</main>
-				<?php require 'footer.php'; ?>
+				<?php require 'script.php'; ?>
 			</body>

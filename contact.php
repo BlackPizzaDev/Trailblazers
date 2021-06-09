@@ -1,4 +1,4 @@
-<body data-barba="wrapper">
+<body class="Body-Dark" data-barba="wrapper">
 	<?php require 'head.php'; ?>
 
 	<main data-barba="Container" data-barba-namespace="home">
@@ -7,10 +7,11 @@
 		</div>
 		<!-- HEADER -->
 		<div class="Content-Full NoPointer">
+			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img class="Logo" src="img/logo.svg">
+			</div>
 			<header class="Content">
-				<div class="Nav-Fixed">
-					<?php require 'nav.php'; ?>
-				</div>
+				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
 					<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 						<img src="img/shapes/header-triangle-blue.svg">
@@ -29,7 +30,7 @@
 			<div class="Validation-Content">
 				<h2>Merci !</h2>
 				<h5 class="MarginTop-10px">Votre demande a bien été envoyée</h5>
-				<a href="index.php" class="CTA Link-Main MarginTop-30px">
+				<a href="index.php" class="Link-Main-Offers CTA Link-Main MarginTop-30px">
 					Retour à l'accueil
 				<img src="../img/a/arrow.svg" alt="Lien">
 				</a>
@@ -100,5 +101,5 @@
 			</div>
 			<!-- FOOTER -->
 		</main>
-		<?php require 'footer.php'; ?>
+		<?php require 'script.php'; ?>
 	</body>

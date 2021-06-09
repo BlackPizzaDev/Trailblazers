@@ -6,7 +6,7 @@
 				<li><a href="#!" class="Nav-Link">EN</a></li>
 			</ul>
 			<ul class="Menu-Close-List">
-				<li><a href="#!" class="Nav-Link Close Menu-Label">Close</a></li>
+				<li><a href="#!" class="Nav-Link Close Menu-Label">Fermer</a></li>
 			</ul>
 		</div>
 		<div class="Menu-Flex-Box">
@@ -32,29 +32,3 @@
 		</div>
 	</div>
 </section>
-
-<!-- Open/Close Menu -->
-<script>
-$(document).ready(function(){
-  $(".Open").click(function(){
-    $(".Content-Full-Menu").fadeIn(350);
-  });
-  $(".Close").click(function(){
-    $(".Content-Full-Menu").fadeOut(350);
-  });
-});
-</script>
-<!-- Open/Close Menu -->
-
-<!-- Hide Body When Menu Open -->
-<script>
-$(document).ready(function(){
-  $(".Open").click(function(){
-    $(".AllSite").hide();
-  });
-  $(".Close").click(function(){
-    $(".AllSite").show();
-  });
-});
-</script>
-<!-- Hide Body When Menu Open -->

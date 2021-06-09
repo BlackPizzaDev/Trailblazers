@@ -1,4 +1,4 @@
-<body data-barba="wrapper">
+<body class="Body-Dark" data-barba="wrapper">
 	<?php require 'head.php'; ?>
 
 	<main data-barba="Container" data-barba-namespace="home">
@@ -8,9 +8,10 @@
 		<!-- HEADER -->
 		<div class="Content-Full NoPointer">
 			<header class="Content">
-				<div class="Nav-Fixed">
-					<?php require 'nav.php'; ?>
-				</div>
+			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img class="Logo" src="img/logo.svg">
+			</div>
+				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
 					<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 						<img src="img/shapes/header-triangle-blue.svg">
@@ -29,14 +30,14 @@
 			<div class="Validation-Content">
 				<h2>Merci !</h2>
 				<h5 class="MarginTop-10px">Nous vous remercions pour l'intérêt que vous nous portez.</h5>
-				<a href="recrutement.php" class="CTA Link-Main MarginTop-30px">
+				<a href="recrutement.php" class="CTA Link-Main MarginTop-30px Link-Main-Offers">
 					Retour aux offres
 				<img src="../img/a/arrow.svg" alt="Lien">
 				</a>
 			</div>
 		</div>
 		<div class="Content Offers-Form-Box">
-			<a href="#!" class="Nav-Link Close Menu-Label Offers-Box-Close">Close</a>
+			<a href="#!" class="Nav-Link Close Menu-Label Offers-Box-Close">Fermer</a>
 			<div class="Offers-Content">
 				<h2 class="Color-white">Postulez</h2>
 				<h5 class="Color-white">Informations</h5>
@@ -90,7 +91,10 @@
 						<section class="Section-Offers" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 							<div class="DropDown-Recrutement-Box">
 								<div class="Postulator-Box">
-									<a href="#!" class="Color-Purple CTA CTA-Offers">Postuler à l'offre</a>
+									<a href="#!" class=" CTA-Offers CTA Link-Main-Offers Link-Main">
+										Postuler à l'offre
+											<img src="../img/a/arrow.svg" alt="Lien">
+									</a>
 								</div>
 								<div class="RightWrapper">
 									<div id="DropDown" class="DropDown DropDown-L DropDown-White">
@@ -106,7 +110,10 @@
 							</div>
 							<div class="DropDown-Recrutement-Box">
 								<div class="Postulator-Box">
-									<a href="#!" class="Color-Purple CTA CTA-Offers">Postuler à l'offre</a>
+									<a href="#!" class=" CTA-Offers CTA Link-Main-Offers Link-Main">
+										Postuler à l'offre
+											<img src="../img/a/arrow.svg" alt="Lien">
+									</a>
 								</div>
 								<div class="RightWrapper">
 									<div id="DropDown" class="DropDown DropDown-L DropDown-White">
@@ -122,7 +129,10 @@
 							</div>
 							<div class="DropDown-Recrutement-Box">
 								<div class="Postulator-Box">
-									<a href="#!" class="Color-Purple CTA CTA-Offers">Postuler à l'offre</a>
+									<a href="#!" class=" CTA-Offers CTA Link-Main-Offers Link-Main">
+										Postuler à l'offre
+											<img src="../img/a/arrow.svg" alt="Lien">
+									</a>
 								</div>
 								<div class="RightWrapper">
 									<div id="DropDown" class="DropDown DropDown-L DropDown-White">
@@ -153,7 +163,7 @@
 					<div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
 						<div class="Box-Footer-Mailto">
 							<p class="Color-White">Une demande ? Un projet ?</p>
-							<a class="Box-Footer-Mailto-Link" href="#!">Nous écrire <img class="Box-Footer-Mailto-Arrow" src="img/a/arrow-footer.svg" alt="Continuer"></a>
+							<a class="Box-Footer-Mailto-Link" href="contact.php">Nous écrire <img class="Box-Footer-Mailto-Arrow" src="img/a/arrow-footer.svg" alt="Continuer"></a>
 						</div>
 						<div class="Box-Footer-Links">
 							<div>
@@ -169,5 +179,5 @@
 			</div>
 			<!-- FOOTER -->
 		</main>
-		<?php require 'footer.php'; ?>
+		<?php require 'script.php'; ?>
 	</body>

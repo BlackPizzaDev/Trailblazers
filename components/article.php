@@ -1,4 +1,5 @@
 <article>
+	<a href="article.php" class="Article-Link"></a>
 	<div>
 		<span class="Article-Categorie">Cross Canal</span>
 		<span class="Date">05.12.2020</span>

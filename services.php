@@ -8,9 +8,10 @@
 		<!-- HEADER -->
 		<div class="Content-Full NoPointer">
 			<header class="Content">
-				<div class="Nav-Fixed">
-					<?php require 'nav.php'; ?>
+				<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<img class="Logo" src="img/logo.svg">
 				</div>
+				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
 					<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 						<img src="img/shapes/header-triangle-blue.svg">
@@ -83,9 +84,9 @@
 						</div>
 					</div>
 				</div>
-				</section>
-				<!-- SERVICES -->
-				<!-- SERVICE -->
+			</section>
+			<!-- SERVICES -->
+			<!-- SERVICE -->
 			<section class="Section-Services-Margin Content-Full">
 				<div class="Section-Services Content">
 					<img data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="Photo-Domaine" src="img/photos/photo-domaine.png" alt="Shapes">
@@ -95,17 +96,33 @@
 			</section>
 			<section class="Cabinet-References Content-Small">
 				<div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-					<h2>Clients & Références</h2>
+					<h2>Références</h2>
 				</div>
-				<div class="Services-Content-Box RightWrapper" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<div class="Services-Content-Box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 					<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula a nisi elementum porta. Ut in massa sem.</h5>
+<!-- 					<div class="Services-Logo-Box">
+						<div>
+							<div class="Logo-Box">
+								<img src="img/services/logo.png">
+							</div>
+							<div class="Logo-Box">
+								<img src="img/services/logo.png">
+							</div>
+							<div class="Logo-Box">
+								<img src="img/services/logo.png">
+							</div>
+							<div class="Logo-Box">
+								<img src="img/services/logo.png">
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</section>
 			<!-- SERVICE -->
-				<!-- FOOTER -->
-				<?php require 'footer-html.php'; ?>
-				<!-- FOOTER -->
-			</div>
-		</main>
-		<?php require 'footer.php'; ?>
-	</body>
+			<!-- FOOTER -->
+			<?php require 'footer.php'; ?>
+			<!-- FOOTER -->
+		</div>
+	</main>
+	<?php require 'script.php'; ?>
+</body>

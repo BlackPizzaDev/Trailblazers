@@ -16,6 +16,10 @@ body {
   margin: 0px;
 }
 
+.Body-Dark {
+  background-color: #111213;
+}
+
 @media screen and (max-width: 510px) {
   body {
     overflow-x: hidden;
@@ -179,6 +183,7 @@ body {
   .Header, .Template-Head {
     min-height: auto;
     padding-bottom: 40px;
+    box-sizing: border-box;
   }
 
   .Nav-Fixed {
@@ -186,44 +191,58 @@ body {
   }
 }
 
+.Logo {
+  transition: width ease 0.2s;
+  left: 40px;
+  top: 40px;
+  position: absolute;
+}
+
 @media screen and (max-width: 510px) {
   .Logo {
-    width: 45vw;
+    width: 55vw;
+    left: 25px;
+    top: 50px;
+
   }
 }
 
 @media screen and (max-width: 320px) {
   .Logo {
     width: 55vw;
+    left: 15px;
+    top: 40px;
   }
 }
 
-.Logo {
-  transition: width ease 0.2s;
-}
-
 .Nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 9999;
-  width: 100%;
-/*  position: absolute;
-  right: 0;
   background: #111213;
-  width: fit-content;
-  padding: 10px 5px;
+  padding: 10px 10px 10px 25px;
   border-radius: 50px;
-  backdrop-filter: saturate(180%) blur(20px);*/
+  backdrop-filter: saturate(180%) blur(20px);
+  right: 40;
+  top: 40;
 }
 
-/*.Nav-Fixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 999;
+@media screen and (max-width: 510px) {
+  .Nav {
+    position: absolute;
+    padding: 0px;
+    backdrop-filter: none;
+    right: 25;
+    top: 40;
+  }
+}
+
+.Nav-Fixed {
+  z-index: 99999;
   width: 100%;
-}*/
+}
 
 @media screen and (max-width: 635px) {
   .Nav-Link-Contact {
@@ -238,7 +257,6 @@ body {
 }
 
 .Open {
-  margin-left: 50px;
   align-items: center;
 }
 
@@ -328,8 +346,6 @@ body {
   width: 100%;
   max-width: 253px;
 }
-
-
 /* Header
 
 /*Menu*/
@@ -340,10 +356,11 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin-left: calc(-50vw + 50%);
-  position: absolute;
-  top: 0;
   display: none;
   z-index: 99999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 .Menu-Section {
@@ -662,6 +679,12 @@ body {
     width: 88vw;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .Keywords-Description {
+    display: none;
+  }
+}
 /*Section Keywords*/
 
 /*Services*/
@@ -829,7 +852,6 @@ body {
 }
 
 
-
 @media screen and (max-width: 1155px) {
   article {
     width: 100% !important;
@@ -839,6 +861,119 @@ body {
     .Box-Articles-2X:last-child > article:last-child {
     margin-bottom: 0px;
   }
+}
+
+.Article-Link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.Article-Content {
+  display: flex;
+}
+
+@media screen and (max-width:1000px) {
+  .Article-Content {
+    flex-direction: column;
+  }
+}
+
+.Article-Wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 825px;
+}
+
+@media screen and (max-width:1000px) {
+  .Article-Wrapper {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.Article-Share {
+  width: 500px;
+  display: block;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width:1000px) {
+  .Article-Share {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .Article-Share > h5 {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .Article-Share > h5:last-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .Article-Share > h5 {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+}
+
+.Article-Cover, .Box-Quote, .Box-Article {
+  margin: 0px 0px 70px 0px;
+}
+
+@media screen and (max-width:500px) {
+    .Article-Cover, .Box-Quote, .Box-Article {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.Article-Cover {
+  margin-top: -100px;
+}
+
+@media screen and (max-width:1000px) {
+  .Article-Cover {
+   margin-top: 0px;
+  }
+}
+
+.Article-Cover > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.Box-Article > h5 {
+  margin-bottom: 20px;
+}
+
+.Box-List {
+  margin: 40px 0px 0px 0px;
+}
+
+.Quote {
+  font-family: 'Arial';
+  margin-right: 10px;
+}
+
+.Box-Pagination {
+  display: flex;
+  justify-content: space-between;
 }
 /*Articles*/
 
@@ -995,7 +1130,7 @@ body {
 .Template-Head {
   display: flex;
   align-items: center;
-  height: 500px;
+  height: 600px;
   justify-content: center;
 }
 
@@ -1009,14 +1144,14 @@ body {
 @media screen and (max-width: 510px) {
   .Template-Head {
     height: 100%;
-    max-height: 500px;
+    max-height: fit-content;
   }
 }
 
 @media screen and (max-width: 320px) {
   .Template-Head {
     height: 100%;
-    max-height: 340px;
+    max-height: fit-content;
   }
 }
 
@@ -1285,8 +1420,7 @@ body {
 .Services-Content-Box  {
   margin-top: 80px;
   align-self: flex-start;
-  width: 100%;
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1295,7 +1429,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   .Services-Content-Box {
     margin-top: 50px;
   }
@@ -1307,6 +1441,38 @@ body {
 
 .Services-Content-Box > ul {
   margin-top: 20px;
+}
+
+.Services-Logo-Box > div {
+  display: flex;
+  margin-top: 80px;
+  max-width: 800px;
+  width: 100%;
+}
+
+@media screen and (max-width: 510px) {
+.Services-Logo-Box > div {
+  margin-top: 30px;
+  }
+}
+
+.Services-Logo-Box > div:last-child {
+  margin-top: 50px;
+}
+
+.Logo-Box {
+    margin-right: 50px;
+}
+
+.Logo-Box > img {
+  width: 100px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 510px) {
+  .Logo-Box > img {
+    width: 60px;
+  }
 }
 
 .Photo-Domaine {
@@ -1476,6 +1642,7 @@ body {
   bottom: 0;
   background: rgba(19, 20, 20, 1);
   display: none;
+  margin: 0px 30px;
 }
 
 .Offers-Form-Box {
@@ -1488,6 +1655,12 @@ body {
   background: rgba(19, 20, 20, 1);
   display: none;
   overflow: scroll;
+}
+
+@media screen and (max-width: 500px) {
+  .Offers-Form-Box {
+    padding-bottom: 30px;
+  }
 }
 
 .Validation-Content {
@@ -1519,7 +1692,7 @@ body {
 @media screen and (max-width: 500px) {
   .Validation-Box-Close, .Offers-Box-Close {
     right: 25px;
-    top: 30px;
+    top: 40px;
   }
 }
 
@@ -1538,7 +1711,7 @@ body {
   color: #FFF !important;
 }
 
-.Validation-Content > .Link-Main {
+.Validation-Content > ..Validation-Content   {
   color: #FFF !important;
   border-bottom: solid 1px #FFF !important;
   padding-bottom: 10px;
@@ -1551,17 +1724,12 @@ body {
 .Offers-Content {
   margin: 0 auto;
   padding-top: 100px;
-  width: 1250px;
+  width: 800px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .Offers-Content {
     padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 1345px) {
-  .Offers-Content {
     width: 100%;
   }
 }
