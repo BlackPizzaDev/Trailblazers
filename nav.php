@@ -1,3 +1,4 @@
+<div class="Nav-Relative">
 <nav class="Nav" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out">
 	<div class="Links">
 		<ul>
@@ -5,3 +6,4 @@
 		</ul>
 	</div>
 </nav>
+</div>

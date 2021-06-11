@@ -9,7 +9,11 @@
 		<div class="Content-Full NoPointer">
 			<header class="Content">
 				<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-					<img class="Logo" src="img/logo.svg">
+					<h1>
+						<a href="index.php">
+							<img class="Logo" src="img/logo.svg">
+						</a>
+					</h1>
 				</div>
 				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
@@ -100,22 +104,36 @@
 				</div>
 				<div class="Services-Content-Box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 					<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula a nisi elementum porta. Ut in massa sem.</h5>
-<!-- 					<div class="Services-Logo-Box">
-						<div>
-							<div class="Logo-Box">
-								<img src="img/services/logo.png">
-							</div>
-							<div class="Logo-Box">
-								<img src="img/services/logo.png">
-							</div>
-							<div class="Logo-Box">
-								<img src="img/services/logo.png">
-							</div>
-							<div class="Logo-Box">
-								<img src="img/services/logo.png">
-							</div>
+					<div class="Logo-References">
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
 						</div>
-					</div> -->
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+						<div class="Logo-References-Box">
+							<a href="#!"></a>
+							<img src="img/logo-dark.svg" alt="Mon logo">
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- SERVICE -->

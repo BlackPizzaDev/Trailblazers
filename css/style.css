@@ -306,6 +306,14 @@ body {
 }
 
 
+@media screen and (max-width: 700px) {
+  .Header-Mobile-Picture {
+    display: block;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
 .Triangles-Box {
   width: 100%;
   max-width: 40vw;
@@ -1431,7 +1439,7 @@ body {
 
 @media screen and (max-width: 510px) {
   .Services-Content-Box {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
@@ -1443,35 +1451,64 @@ body {
   margin-top: 20px;
 }
 
-.Services-Logo-Box > div {
+.Logo-References {
   display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: flex-start;
   margin-top: 80px;
-  max-width: 800px;
-  width: 100%;
 }
 
 @media screen and (max-width: 510px) {
-.Services-Logo-Box > div {
-  margin-top: 30px;
+  .Logo-References {
+    margin-top: 50px;
   }
 }
 
-.Services-Logo-Box > div:last-child {
-  margin-top: 50px;
+.Logo-References-Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  outline: 1px solid #111213;
+  padding: 20px;
+  margin: 0 1px 1px 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.Logo-Box {
-    margin-right: 50px;
+
+.Logo-References-Box > a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.Logo-Box > img {
-  width: 100px;
-  margin-top: 50px;
+.Logo-References-Box > img {
+  width: 100%;
+  transition: opacity ease-in 0.5s;
+}
+
+.Logo-References-Box > a img:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+  .Logo-References-Box {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 510px) {
-  .Logo-Box > img {
-    width: 60px;
+  .Logo-References-Box {
+    width: 49%;
+    height: 150px;
   }
 }
 

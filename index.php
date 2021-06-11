@@ -8,12 +8,16 @@
 		<!-- HEADER -->
 		<div class="Content-Full Anchor">
 			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-				<img class="Logo" src="img/logo.svg">
+				<h1>
+					<a href="index.php">
+						<img class="Logo" src="img/logo.svg">
+					</a>
+				</h1>
 			</div>
 			<header class="Content Header">
 				<a href="#Anchor" id="AnchorLink"></a>
-					<?php require 'nav.php'; ?>
-				<div class="H2-Box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<?php require 'nav.php'; ?>
+				<div class="H2-Box" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
 					<h2 class="Color-white">Cabinet de conseil en stratégie digitale.</h2>
 				</div>
 				<div class="Triangles-Box">

@@ -8,7 +8,11 @@
 		<!-- HEADER -->
 		<div class="Content-Full NoPointer">
 			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-				<img class="Logo" src="img/logo.svg">
+					<h1>
+						<a href="index.php">
+							<img class="Logo" src="img/logo.svg">
+						</a>
+					</h1>w
 			</div>
 			<header class="Content">
 				<?php require 'nav.php'; ?>

@@ -9,7 +9,11 @@
 		<div class="Content-Full NoPointer">
 			<header class="Content">
 			<div data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out">
-				<img class="Logo" src="img/logo.svg">
+					<h1>
+						<a href="index.php">
+							<img class="Logo" src="img/logo.svg">
+						</a>
+					</h1>
 			</div>
 				<?php require 'nav.php'; ?>
 				<div class="Template-Head">
